@@ -16,6 +16,8 @@ public class ConeTreePlanter : MonoBehaviour {
     public float fullScaleMin = 0.5f;
     public float fullScaleMax = 1f;
 
+    public LayerMask groundLayer;
+
     public void RandomizeAllTreesLook()
     {
         foreach(ConeTree ct in trees)
@@ -23,5 +25,19 @@ public class ConeTreePlanter : MonoBehaviour {
             ct.RandomizeLook(coneRotationMax, coneDistMin, coneDistMax, bottomMinHeight, bottomMaxHeight, minSizeAdjust, maxSizeAdjust, fullScaleMin, fullScaleMax);
         }
     }
+
+    public void PlaceOnGround()
+    {
+        RaycastHit hit;
+        foreach (ConeTree ct in trees)
+        {
+            if (Physics.Raycast(ct.transform.position + Vector3.up, Vector3.down, out hit, 10, groundLayer.value))
+            {
+                ct.transform.position = hit.point;
+            }
+        }
+    }
+
+
 
 }

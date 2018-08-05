@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/FirstToSeeTheSun/SeeTheSun2.unity
+    guid: 4acaf394cd5960643a65d7651722cf86
+  m_configObjects: {}

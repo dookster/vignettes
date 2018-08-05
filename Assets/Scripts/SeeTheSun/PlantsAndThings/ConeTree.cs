@@ -33,8 +33,8 @@ public class ConeTree : MonoBehaviour {
         // middle cones
         for (int n = 0; n < cones.Length; n++)
         {
-            cones[n].localEulerAngles = new Vector3(Random.Range(-maxRot, maxRot), Random.Range(-maxRot, maxRot), Random.Range(0f, 360f));
-            cones[n].localPosition = new Vector3(0, 0, Random.Range(minDist, maxDist));
+            cones[n].localEulerAngles = new Vector3(Random.Range(-maxRot, maxRot), Random.Range(0f, 360f), Random.Range(-maxRot, maxRot));
+            cones[n].localPosition = new Vector3(0, Random.Range(minDist, maxDist), 0);
             cones[n].localScale = Vector3.one * Random.Range(minSize, maxSize);
         }
      

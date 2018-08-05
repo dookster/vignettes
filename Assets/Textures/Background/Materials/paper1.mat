@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: paper1
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: f15f1f93353021947bc0c746cf725653, type: 3}
   m_ShaderKeywords: _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -39,9 +39,13 @@ Material:
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c61f200bf8d93ca4582580867a13e6bc, type: 3}
+        m_Texture: {fileID: 2800000, guid: a68fad85ac18fd040a1d19bc704c7ad8, type: 3}
         m_Scale: {x: 2, y: 2}
         m_Offset: {x: 0, y: 0}
+    - _MapTex:
+        m_Texture: {fileID: 2800000, guid: cd46450cab58f704d9d493036ee36b6f, type: 3}
+        m_Scale: {x: 1.34, y: 2.02}
+        m_Offset: {x: -0.15, y: -0.27}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -54,7 +58,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SecondTex:
+        m_Texture: {fileID: 2800000, guid: a68fad85ac18fd040a1d19bc704c7ad8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _BorderWidth: -2.54
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
@@ -72,5 +81,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.30588236, g: 0.26591372, b: 0.24592942, a: 1}
+    - _BorderColor: {r: 0.20754719, g: 0.12462304, b: 0, a: 0}
+    - _Color: {r: 0.2880606, g: 0.294, b: 0.24351516, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _MapOffset: {r: 0.12, g: 0, b: 0, a: 0}
+    - _MapScale: {r: 4.01, g: 1, b: 1, a: 1}
+    - _SecondColor: {r: 0.2901961, g: 0.26666668, b: 0.25490198, a: 1}

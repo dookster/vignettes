@@ -34,6 +34,8 @@ public class ConePlanterEditor : Editor {
         {
             EditorGUI.BeginChangeCheck();
 
+            treePlanter.PlaceOnGround();
+
             if (EditorGUI.EndChangeCheck())
             {
 
